@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* JLStudios Brand Colors - All HSL */
+    --background: 0 0% 100%;
+    --foreground: 217 65% 12%; /* #111827 near-black */
+
+    --card: 0 0% 100%;
+    --card-foreground: 217 65% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 65% 12%;
+
+    /* Primary - Near Black #111827 */
+    --primary: 217 65% 12%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Neutral Light #F3F4F6 */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 217 65% 12%;
+
+    /* Muted */
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent - Indigo #6366F1 */
+    --accent: 239 84% 67%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Support/Cyan #06B6D4 */
+    --cyan: 187 95% 43%;
+    --cyan-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 91%;
+    --input: 220 14% 91%;
+    --ring: 239 84% 67%;
+
+    --radius: 1rem;
+
+    /* Custom design tokens */
+    --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-medium: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-large: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
